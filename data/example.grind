@@ -1,0 +1,3 @@
+in: example.csv format=csv
+
+xslt: ref.xsl

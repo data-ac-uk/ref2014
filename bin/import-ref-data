@@ -1,0 +1,16 @@
+#!/usr/bin/env php
+<?php
+
+# Work out location 
+$base_dir = dirname( __DIR__ );
+
+/* ARC2 static class inclusion */ 
+include_once($base_dir.'/lib/arc2/ARC2.php');
+
+include_once($base_dir.'/config.php');
+
+/* instantiation */
+$ep = ARC2::getStoreEndpoint($config);
+
+$r = $ep->query( "LOAD <http://ref2014.ecs.soton.ac.uk/data/ref.ttl>");
+print_r( $r );

@@ -1,0 +1,59 @@
+
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix aiiso: <http://purl.org/vocab/aiiso/schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix oo:     <http://purl.org/openorg/> .
+@prefix vcard:  <http://www.w3.org/2006/vcard/ns#> .
+@prefix ospost: <http://data.ordnancesurvey.co.uk/ontology/postcode/> .
+@prefix lprov: <http://id.learning-provider.data.ac.uk/terms#> .
+
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix spatialrelations: <http://data.ordnancesurvey.co.uk/ontology/spatialrelations/> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+
+<http://id.learning-provider.data.ac.uk/ukprn/10007798>
+	a foaf:Organization , aiiso:Institution , lprov:UKUniversity ;
+	rdfs:label "THE UNIVERSITY OF MANCHESTER" ;
+	skos:notation "10007798"^^<http://id.learning-provider.data.ac.uk/ns/UKPRNSchemeDatatype> ;
+        oo:primaryContact <http://id.learning-provider.data.ac.uk/ukprn/10007798#contact> ;
+        ospost:postcode <http://data.ordnancesurvey.co.uk/id/postcodeunit/M139PL> ;
+	vcard:adr <http://id.learning-provider.data.ac.uk/ukprn/10007798#address> ;
+	foaf:homepage <http://www.manchester.ac.uk/> ;
+	rdfs:seeAlso <http://www.sameas.org/rdf?uri=http%3A%2F%2Fid%2Elearning-provider%2Edata%2Eac%2Euk%2Fukprn%2F10007798> .
+<http://data.ordnancesurvey.co.uk/id/postcodeunit/M139PL> rdfs:label "M13 9PL" .
+<http://id.learning-provider.data.ac.uk/ukprn/10007798#address>
+	a vcard:Address ;
+	vcard:postal-code "M13 9PL" ;
+	vcard:country-name "United Kingdom" ;
+        vcard:street-address "OXFORD ROAD" ;
+        vcard:locality "MANCHESTER" .
+
+<http://id.learning-provider.data.ac.uk/ukprn/10007798>
+	skos:notation "E5AFE7E4-FF5D-4FF1-B50B-E04A6DF7D791"^^<http://id.learning-provider.data.ac.uk/ns/GTRIdSchemeDatatype> ;
+	foaf:isPrimaryTopicOf <http://en.wikipedia.org/wiki/University_of_Manchester> ;
+	owl:sameAs <http://dbpedia.org/resource/University_of_Manchester>, <http://gtr.rcuk.ac.uk:80/organisation/E5AFE7E4-FF5D-4FF1-B50B-E04A6DF7D791> .
+
+<http://id.learning-provider.data.ac.uk/group/N8_Research_Partnership>
+	a foaf:Organization , lprov:InstitutionalGroup ;
+	rdfs:label "N8 Research Parnership" ;
+	owl:sameAs <http://dbpedia.org/resource/N8_Research_Partnership> ;
+	foaf:isPrimaryTopicOf <http://en.wikipedia.org/wiki/N8_Research_Partnership> ;
+	foaf:homepage <http://www.n8research.org.uk/> ;
+	foaf:member <http://id.learning-provider.data.ac.uk/ukprn/10007798> .
+
+<http://id.learning-provider.data.ac.uk/group/Russell_Group>
+	a foaf:Organization , lprov:InstitutionalGroup ;
+	rdfs:label "Russell Group" ;
+	owl:sameAs <http://dbpedia.org/resource/Russell_Group> ;
+	foaf:isPrimaryTopicOf <http://en.wikipedia.org/wiki/Russell_Group> ;
+	foaf:homepage <http://www.russellgroup.ac.uk/> ;
+	foaf:member <http://id.learning-provider.data.ac.uk/ukprn/10007798> .
+
+<http://data.ordnancesurvey.co.uk/id/postcodeunit/M139PL> 
+	a ospost:PostcodeUnit ;
+	spatialrelations:easting "384615"^^xsd:integer ;
+	spatialrelations:northing "396824"^^xsd:integer ;
+	geo:lat "53.467943"^^xsd:decimal ;
+	geo:long "-2.233222"^^xsd:decimal .

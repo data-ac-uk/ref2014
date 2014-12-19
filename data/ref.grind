@@ -1,0 +1,5 @@
+in: ref.xlsx format=excelx
+
+skip-rows: 7
+
+xslt: ref.xsl

@@ -1,0 +1,9 @@
+[submodule "lib/arc2"]
+	path = lib/arc2
+	url = https://github.com/semsol/arc2
+[submodule "Grinder"]
+	path = Grinder
+	url = https://github.com/cgutteridge/Grinder.git
+[submodule "lib/Grinder"]
+	path = lib/Grinder
+	url = https://github.com/cgutteridge/Grinder.git

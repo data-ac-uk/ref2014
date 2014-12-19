@@ -1,0 +1,16 @@
+#!
+BASE_DIR=`dirname "$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"`
+GRINDER=$BASE_DIR/lib/Grinder/bin/grinder
+DATA_DIR=$BASE_DIR/htdocs/data
+VAR_DIR=$BASE_DIR/var
+cd $BASE_DIR/data
+
+$GRINDER --config ref.grind > $VAR_DIR/ref.rdf
+rapper -i rdfxml $VAR_DIR/ref.rdf | sort -u  > $VAR_DIR/ref.ntriples
+rapper -i ntriples $VAR_DIR/ref.ntriples -o turtle > $DATA_DIR/ref.ttl
+
+$GRINDER --config example.grind > $VAR_DIR/example.rdf
+rapper -i rdfxml $VAR_DIR/example.rdf | sort -u  > $VAR_DIR/example.ntriples
+rapper -i ntriples $VAR_DIR/example.ntriples -o turtle > $DATA_DIR/example.ttl
+
+$BASE_DIR/bin/import-ref-data
