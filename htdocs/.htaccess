@@ -1,0 +1,3 @@
+AddType text/turtle .ttl
+AddType text/csv .csv
+AddType application/rdf+xml .rdf

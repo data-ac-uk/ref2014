@@ -1,0 +1,6 @@
+#!
+BASE_DIR=`dirname "$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"`
+
+curl -s http://neologism.ecs.soton.ac.uk/ref2014.ttl > $BASE_DIR/htdocs/terms.ttl
+#| sed 's!http://neologism.ecs.soton.ac.uk/ref2014!http://id.ref2014.data.ac.uk/ns/!g'
+

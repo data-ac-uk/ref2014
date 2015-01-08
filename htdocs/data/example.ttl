@@ -1,36 +1,36 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 
-<http://example.org/ref2014/panel/C>
-    a <http://example.org/ref2014/ns/Panel>;
+<http://id.learning-provider.data.ac.uk/ukprn/10007848>
+    <http://id.ref2014.data.ac.uk/ns/sortOrder> 280;
+    a <http://id.ref2014.data.ac.uk/ns/Institution>, <http://purl.org/vocab/aiiso/schema#Institution>, <http://xmlns.com/foaf/0.1/Organization>;
+    <http://xmlns.com/foaf/0.1/name> "University of Chester" .
+
+<http://id.ref2014.data.ac.uk/panel/C>
+    a <http://id.ref2014.data.ac.uk/ns/Panel>;
     <http://www.w3.org/2000/01/rdf-schema#label> "Panel C" .
 
-<http://example.org/ref2014/profile/Outputs>
-    a <http://example.org/ref2014/ns/Profile>;
+<http://id.ref2014.data.ac.uk/profile/Outputs>
+    a <http://id.ref2014.data.ac.uk/ns/Profile>;
     <http://www.w3.org/2000/01/rdf-schema#label> "Outputs" .
 
-<http://example.org/ref2014/submision/C-17-10007848-A-Outputs>
-    <http://example.org/ref2014/ns/aStaff> "9.60"^^<http://www.w3.org/2001/XMLSchema#float>;
-    <http://example.org/ref2014/ns/grade1> "32.4"^^<http://www.w3.org/2001/XMLSchema#float>;
-    <http://example.org/ref2014/ns/grade2> "35.2"^^<http://www.w3.org/2001/XMLSchema#float>;
-    <http://example.org/ref2014/ns/grade3> "16.2"^^<http://www.w3.org/2001/XMLSchema#float>;
-    <http://example.org/ref2014/ns/grade4> "10.8"^^<http://www.w3.org/2001/XMLSchema#float>;
-    <http://example.org/ref2014/ns/gradeU> "5.4"^^<http://www.w3.org/2001/XMLSchema#float>;
-    <http://example.org/ref2014/ns/multiLetter> "A";
-    <http://example.org/ref2014/ns/multiName> "Geography and Development Studies";
-    <http://example.org/ref2014/ns/submissionInstitution> <http://id.learning-provider.data.ac.uk/ukprn/10007848>;
-    <http://example.org/ref2014/ns/submissionPanel> <http://example.org/ref2014/panel/C>;
-    <http://example.org/ref2014/ns/submissionProfile> <http://example.org/ref2014/profile/Outputs>;
-    <http://example.org/ref2014/ns/submissionUnit> <http://example.org/ref2014/unit/17>;
-    a <http://example.org/ref2014/ns/Submission>;
+<http://id.ref2014.data.ac.uk/submision/C-17-10007848-A-Outputs>
+    <http://id.ref2014.data.ac.uk/ns/aStaff> "9.60"^^<http://www.w3.org/2001/XMLSchema#float>;
+    <http://id.ref2014.data.ac.uk/ns/grade1> "32.4"^^<http://www.w3.org/2001/XMLSchema#float>;
+    <http://id.ref2014.data.ac.uk/ns/grade2> "35.2"^^<http://www.w3.org/2001/XMLSchema#float>;
+    <http://id.ref2014.data.ac.uk/ns/grade3> "16.2"^^<http://www.w3.org/2001/XMLSchema#float>;
+    <http://id.ref2014.data.ac.uk/ns/grade4> "10.8"^^<http://www.w3.org/2001/XMLSchema#float>;
+    <http://id.ref2014.data.ac.uk/ns/gradeU> "5.4"^^<http://www.w3.org/2001/XMLSchema#float>;
+    <http://id.ref2014.data.ac.uk/ns/multiLetter> "A";
+    <http://id.ref2014.data.ac.uk/ns/multiName> "Geography and Development Studies";
+    <http://id.ref2014.data.ac.uk/ns/submissionInstitution> <http://id.learning-provider.data.ac.uk/ukprn/10007848>;
+    <http://id.ref2014.data.ac.uk/ns/submissionPanel> <http://id.ref2014.data.ac.uk/panel/C>;
+    <http://id.ref2014.data.ac.uk/ns/submissionProfile> <http://id.ref2014.data.ac.uk/profile/Outputs>;
+    <http://id.ref2014.data.ac.uk/ns/submissionUnit> <http://id.ref2014.data.ac.uk/unit/17>;
+    a <http://id.ref2014.data.ac.uk/ns/Submission>;
     <http://www.w3.org/2000/01/rdf-schema#label> "Outputs results from submission of University of Chester to Geography, Environmental Studies and Archaeology (A: Geography and Development Studies)" .
 
-<http://example.org/ref2014/unit/17>
-    <http://example.org/ref2014/ns/unitPanel> <http://example.org/ref2014/panel/C>;
-    a <http://example.org/ref2014/ns/Unit>;
+<http://id.ref2014.data.ac.uk/unit/17>
+    <http://id.ref2014.data.ac.uk/ns/unitPanel> <http://id.ref2014.data.ac.uk/panel/C>;
+    a <http://id.ref2014.data.ac.uk/ns/Unit>;
     <http://www.w3.org/2000/01/rdf-schema#label> "Geography, Environmental Studies and Archaeology" .
-
-<http://id.learning-provider.data.ac.uk/ukprn/10007848>
-    <http://example.org/ref2014/ns/sortOrder> 280;
-    a <http://example.org/ref2014/ns/Institution>, <http://purl.org/vocab/aiiso/schema#Institution>, <http://xmlns.com/foaf/0.1/Organization>;
-    <http://xmlns.com/foaf/0.1/name> "University of Chester" .
 

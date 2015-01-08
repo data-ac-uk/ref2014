@@ -1,15 +1,15 @@
 PREFIX ref: <http://id.ref2014.data.ac.uk/ns/>
 PREFIX foaf: <http://xmlns.com/foaf/0.1/>
 
-# This example query gives the results for Outputs for Unit 7 for 
-# Russell Group universities.
+# This example query gives the results for Outputs for Unit 13 for 
+# Russell Group universities only.
 
 SELECT DISTINCT ?name ?multiLetter ?multiName ?aStaff ?g1 ?g2 ?g3 ?g4 ?gu WHERE {
         <http://id.learning-provider.data.ac.uk/group/Russell_Group> foaf:member ?uni .
         ?uni foaf:name ?name .
         ?sub ref:submissionInstitution ?uni ;
                 ref:submissionProfile <http://id.ref2014.data.ac.uk/profile/Outputs> ;
-                ref:submissionUnit <http://id.ref2014.data.ac.uk/unit/11> ; 
+                ref:submissionUnit <http://id.ref2014.data.ac.uk/unit/13> ; 
                 ref:aStaff ?aStaff ;
                 ref:grade1 ?g1 ;
                 ref:grade2 ?g2 ;

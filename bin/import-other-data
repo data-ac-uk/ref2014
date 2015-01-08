@@ -12,7 +12,17 @@ include_once($base_dir.'/config.php');
 /* instantiation */
 $ep = ARC2::getStoreEndpoint($config);
 
+$r = $ep->query( "DELETE FROM <http://learning-provider.data.ac.uk/data/learning-providers-plus.ttl>" );
+print_r( $r );
 $r = $ep->query( "LOAD <http://learning-provider.data.ac.uk/data/learning-providers-plus.ttl>" );
 print_r( $r );
+
+$r = $ep->query( "DELETE FROM <http://learning-provider.data.ac.uk/data/dbpedia.ttl>" );
+print_r( $r );
 $r = $ep->query( "LOAD <http://learning-provider.data.ac.uk/data/dbpedia.ttl>" );
+print_r( $r );
+
+$r = $ep->query( "DELETE FROM <http://id.ref2014.data.ac.uk/ns/>" );
+print_r( $r );
+$r = $ep->query( "LOAD <http://id.ref2014.data.ac.uk/ns/>" );
 print_r( $r );
