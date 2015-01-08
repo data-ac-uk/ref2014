@@ -43,7 +43,7 @@
 
   <xsl:template match="g:row">
     <xsl:variable name="profileuri">http://example.org/ref2014/profile/<xsl:value-of select='g:profile' /></xsl:variable>
-    <xsl:variable name="suburi">http://example.org/ref2014/submision/<xsl:value-of select='g:main-panel' />-<xsl:value-of select='g:unit-of-assessment-number' />-<xsl:value-of select='g:institution-code-ukprn' /><xsl:if test='g:multiple-submission-letter/text()'>-<xsl:value-of select='g:multiple-submission-letter' /></xsl:if></xsl:variable>
+    <xsl:variable name="suburi">http://example.org/ref2014/submision/<xsl:value-of select='g:main-panel' />-<xsl:value-of select='g:unit-of-assessment-number' />-<xsl:value-of select='g:institution-code-ukprn' /><xsl:if test='g:multiple-submission-letter/text()'>-<xsl:value-of select='g:multiple-submission-letter' /></xsl:if>-<xsl:value-of select='g:profile' /></xsl:variable>
     <xsl:variable name="orguri">http://id.learning-provider.data.ac.uk/ukprn/<xsl:value-of select='g:institution-code-ukprn' /></xsl:variable>
     <xsl:variable name="paneluri">http://example.org/ref2014/panel/<xsl:value-of select='g:main-panel' /></xsl:variable>
     <xsl:variable name="unituri">http://example.org/ref2014/unit/<xsl:value-of select='g:unit-of-assessment-number' /></xsl:variable>
@@ -64,7 +64,8 @@
       <ref:sortOrder rdf:datatype="http://www.w3.org/2001/XMLSchema#integer"><xsl:value-of select='g:institution-sort-order' /></ref:sortOrder>
     </ref:Institution>
     <ref:Submission rdf:about="{$suburi}">
-      <rdfs:label>Submission of <xsl:value-of select='g:institution-name' /> to <xsl:value-of select='g:unit-of-assessment-name' /><xsl:if test='g:multiple-submission-letter/text()'> (<xsl:value-of select='g:multiple-submission-letter' />: <xsl:value-of select='g:multiple-submission-name' />)</xsl:if><xsl:if test='g:joint-submission/text()'> (<xsl:value-of select='g:joint-submission' />)</xsl:if> Profile: <xsl:value-of select='g:profile' /></rdfs:label>
+      <rdfs:label><xsl:value-of select='g:profile' /> results from submission of <xsl:value-of select='g:institution-name' /> to <xsl:value-of select='g:unit-of-assessment-name' /><xsl:if test='g:multiple-submission-letter/text()'> (<xsl:value-of select='g:multiple-submission-letter' />: <xsl:value-of select='g:multiple-submission-name' />)</xsl:if><xsl:if test='g:joint-submission/text()'> (<xsl:value-of select='g:joint-submission' />)</xsl:if> 
+</rdfs:label>
       <ref:submissionPanel rdf:resource="{$paneluri}" />
       <ref:submissionUnit rdf:resource="{$unituri}" />
       <ref:submissionInstitution rdf:resource="{$orguri}" />

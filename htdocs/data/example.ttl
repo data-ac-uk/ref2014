@@ -8,7 +8,7 @@
     a <http://example.org/ref2014/ns/Profile>;
     <http://www.w3.org/2000/01/rdf-schema#label> "Outputs" .
 
-<http://example.org/ref2014/submision/C-17-10007848-A>
+<http://example.org/ref2014/submision/C-17-10007848-A-Outputs>
     <http://example.org/ref2014/ns/aStaff> "9.60"^^<http://www.w3.org/2001/XMLSchema#float>;
     <http://example.org/ref2014/ns/grade1> "32.4"^^<http://www.w3.org/2001/XMLSchema#float>;
     <http://example.org/ref2014/ns/grade2> "35.2"^^<http://www.w3.org/2001/XMLSchema#float>;
@@ -22,7 +22,7 @@
     <http://example.org/ref2014/ns/submissionProfile> <http://example.org/ref2014/profile/Outputs>;
     <http://example.org/ref2014/ns/submissionUnit> <http://example.org/ref2014/unit/17>;
     a <http://example.org/ref2014/ns/Submission>;
-    <http://www.w3.org/2000/01/rdf-schema#label> "Submission of University of Chester to Geography, Environmental Studies and Archaeology (A: Geography and Development Studies) Profile: Outputs" .
+    <http://www.w3.org/2000/01/rdf-schema#label> "Outputs results from submission of University of Chester to Geography, Environmental Studies and Archaeology (A: Geography and Development Studies)" .
 
 <http://example.org/ref2014/unit/17>
     <http://example.org/ref2014/ns/unitPanel> <http://example.org/ref2014/panel/C>;
